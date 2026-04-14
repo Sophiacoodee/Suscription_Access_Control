@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form>
+        <h1>Subscription Access</h1>
+
+        <label for="isPaid">Did you pay?</label>
+        <select id="isPaid">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+
+        <label for="plan">Plan</label>
+        <select id="plan">
+            <option value="basic">Basic</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <button type="button" onclick="checkAccess()">Check</button>
+
+        <p id="result"></p>
+    </form>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
